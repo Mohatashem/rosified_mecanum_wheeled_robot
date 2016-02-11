@@ -7,6 +7,6 @@
     <include file="$(find mecanumrobot_mrm)/launch/include/amcl.launch" />
     
     <!-- Calls navigation stack packages for compatible mecanumrobot_mrm base -->
-    <!-- Takes reference from env variable MECANUMBASE. ie. export MECANUMBASE=2wd -->
+    <!-- Takes reference from env variable MECANUMBASE. ie. export MECANUMBASE=wheeltype -->
     <include file="$(find mecanumrobot_mrm)/launch/include/move_base/move_base_$(env MECANUMBASE).launch" />
 </launch>
