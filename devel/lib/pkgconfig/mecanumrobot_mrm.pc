@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/mecanum_ws/devel
+
+Name: mecanumrobot_mrm
+Description: Description of mecanumrobot_mrm
+Version: 0.0.0
+Cflags: -I/home/ubuntu/mecanum_ws/src/mecanumrobot_mrm/include
+Libs: -L${prefix}/lib -lmecanumrobot_mrm
+Requires: roscpp rospy geometry_msgs mecanum_msgs nav_msgs sensor_msgs std_msgs system_lib tf2 tf2_ros

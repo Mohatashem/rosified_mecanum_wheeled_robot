@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu/mecanum_ws/devel/setup.sh

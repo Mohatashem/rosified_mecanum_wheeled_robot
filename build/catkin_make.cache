@@ -1,0 +1,2 @@
+imu_calib:mecanum_msgs:mecanum_pid:mecanum_udev:mecanumrobot_mrm
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/mecanum_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/mecanum_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/mecanum_ws/devel
+
+Name: mecanum_pid
+Description: Description of mecanum_pid
+Version: 0.0.0
+Cflags: -I/home/ubuntu/mecanum_ws/devel/include -I/home/ubuntu/mecanum_ws/src/mecanum_pid/include
+Libs: -L${prefix}/lib 
+Requires: dynamic_reconfigure message_runtime roscpp std_msgs mecanum_msgs

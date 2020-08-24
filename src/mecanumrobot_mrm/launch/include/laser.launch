@@ -1,0 +1,9 @@
+<launch>
+    <!-- Run mecanum compatible laser drivers. Takes reference from env var MECANUMLIDAR. ie. export MECANUMLIDAR=rplidar (this needs to be in .bashrc file of robot computer) -->
+    <include file="$(find mecanumrobot_mrm)/launch/include/lidar/$(env MECANUMLIDAR).launch" />
+
+    <!-- Publish static transform of the laser. Define your sensor offset here -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_laser" args="-0.0155 0 0.16 0 0 0  /base_link /laser"/>
+</launch>
+
+
